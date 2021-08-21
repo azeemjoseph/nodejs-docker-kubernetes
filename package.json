@@ -4,7 +4,8 @@
   "description": "A node js Application deployed using docker-kubernetes ",
   "main": "server.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "dev": "nodemon server.js -L"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.13.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }

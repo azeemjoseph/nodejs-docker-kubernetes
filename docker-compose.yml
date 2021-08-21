@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  nodejs-docker-kubernetes:
+    image: azeemjoseph/nodejs-docker-kubernetes
+    command: sh -c "yarn install && yarn run dev"
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - PORT=8080
+      - MONGO_USER=$MONGO_USER
+      - MONGO_PASSWORD=$MONGO_PASSWORD
+      - MONGO_DB=$MONGO_DB
+      - MONGO_CLUSTER=$MONGO_CLUSTER
+    ports:
+      - "80:8080"
+    volumes:
+      - ./:/nodejs-docker-kubernetes
+      - node_modules:/nodejs-docker-kubernetes/node_modules    
+    working_dir: /nodejs-docker-kubernetes  
+
+volumes:
+  node_modules:
