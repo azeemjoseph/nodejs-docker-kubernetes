@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-docker-kubernetes",
+  "version": "1.0.0",
+  "description": "A node js Application deployed using docker-kubernetes ",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azeemjoseph/nodejs-docker-kubernetes.git"
+  },
+  "keywords": [
+    "kubernetes",
+    "nodejs",
+    "docker"
+  ],
+  "author": "Azeem joseph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azeemjoseph/nodejs-docker-kubernetes/issues"
+  },
+  "homepage": "https://github.com/azeemjoseph/nodejs-docker-kubernetes#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {}
+}
